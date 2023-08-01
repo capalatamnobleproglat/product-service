@@ -2,7 +2,6 @@ package com.att.productservice.service;
 
 import com.att.productservice.dto.ProductDto;
 import org.springframework.data.crossstore.ChangeSetPersister;
-
 import java.util.List;
 
 public interface ProductService {
