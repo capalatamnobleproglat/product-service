@@ -1,7 +1,6 @@
 package com.att.productservice.dto;
 
 public class ProductDto {
-
     private Long id;
     private String name;
     private double price;
