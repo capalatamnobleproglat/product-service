@@ -18,9 +18,6 @@ public class ProductController {
 
     private static final Logger logger = LoggerFactory.getLogger(ProductController.class);
 
-    @Value("${example.property}")
-    private String exampleProperty;
-
     private final ProductService productService;
 
     @Autowired
@@ -40,9 +37,6 @@ public class ProductController {
 
     @GetMapping("/{id}")
     public ProductDto getProductById(@PathVariable Long id) throws ChangeSetPersister.NotFoundException {
-        logger.info("exampleProperty: {}", exampleProperty);
-        // int errorOperation = 0/0;
-
         return productService.getProductById(id);
     }
 
