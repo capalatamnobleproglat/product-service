@@ -3,7 +3,6 @@ package com.att.productservice.controller;
 import com.att.productservice.dto.ProductDto;
 import com.att.productservice.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.web.bind.annotation.*;

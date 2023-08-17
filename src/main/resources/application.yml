@@ -3,8 +3,6 @@ spring:
     name: product-service
   profiles:
     active: development
-  config:
-    import: configserver:http://localhost:8888
   datasource:
     url: jdbc:postgresql://localhost:5433/product_db
     username: product_ms
@@ -13,14 +11,6 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  cloud:
-    config:
-      profile: development
-      fail-fast: true
-      retry:
-        max-attempts: 5
-        max-interval: 3000
-        initial-interval: 1500
 
 server:
   port: 8082
